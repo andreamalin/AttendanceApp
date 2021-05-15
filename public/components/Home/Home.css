@@ -1,0 +1,76 @@
+:root {
+  --gray: #8b8c89;
+  --pale: #e5d9f2;
+  --bright: #a594f9;
+  --buttons: #c1daff;
+}
+
+button {
+  border: none;
+}
+
+body {
+  background: white;
+  color: rgba(0,0,0,0.87);
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header{
+  text-align: center;
+  width:100%;
+  padding: 1em 0em 1em 0em;
+  margin-bottom: 2em;
+  background-image: linear-gradient(var(--pale), var(--bright));
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+
+.header h1:first-child {
+  font-size: 2em;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.header h1:last-child {
+  font-size: 2em;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+.home button {
+  margin: 1em;
+  padding: 0.5em;
+  width: 75vw;
+  background-color: var(--buttons);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.exit {
+  margin-top: auto;
+}
+
+.exit button {
+  background-color: var(--bright);
+  border-radius: 25px;
+  width: auto;
+  padding: 0.5em 3em 0.5em 3em;
+}
+
+@media (min-width: 1000px) {
+  .button {
+    padding: 1em;
+    width: 50vw;
+  }
+}

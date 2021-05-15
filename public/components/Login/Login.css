@@ -1,0 +1,50 @@
+.login {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login button {
+  background-color: black;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em 2em 1em 2em;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.login img {
+  width: 500px;
+  max-width: 80%;
+  padding-bottom: 3em;
+}
+
+.login svg:first-child {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  transform: rotate(180deg);
+  height: 35vh;
+  width: 100vw;
+}
+
+.login svg {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  height: 50vh;
+  width: 100vw;
+}
+
+@media (min-width: 900px) {
+  .login img {
+    max-width: 100%;
+  }
+  .login button {
+    font-size: 1.2em;
+  }
+}
